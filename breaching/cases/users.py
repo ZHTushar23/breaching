@@ -122,6 +122,7 @@ class UserSingleStep(torch.nn.Module):
         else:
             data = custom_data
         B = data["labels"].shape[0]
+        # print("loop constant: ",B)
         # Compute local updates
         shared_grads = []
         shared_buffers = []
